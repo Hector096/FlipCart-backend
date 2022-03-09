@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "rack-cors", "~> 1.1"
+
+gem "devise", "~> 4.8"
+
+gem "devise-jwt", "~> 0.9.0"
