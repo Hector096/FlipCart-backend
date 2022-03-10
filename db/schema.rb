@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_09_143406) do
   create_table "orders", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.integer "quantity", default: 1, null: false
+    t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
@@ -42,6 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_09_143406) do
   create_table "products", force: :cascade do |t|
     t.string "name", null: false
     t.text "description"
+    t.string "img", null: false
     t.decimal "price", null: false
     t.integer "quantity", default: 1, null: false
     t.datetime "created_at", null: false

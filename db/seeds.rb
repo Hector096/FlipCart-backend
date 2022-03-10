@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-chris = User.create!(name: 'chris', email: 'chris988@test.com', password: 'chris123')
-category1 = Category.create!(name: "Method")
-product1 = category1.products.create!(name:"Water bottle",price: 500, description: "Rolex Water bottle from switz alps",quantity: 10);
+chris = User.create!(name: 'chris', email: 'chris984568@test.com', password: 'chris123')
+category1 = Category.create!(name: "Bottle")
+product1 = category1.products.create!(name:"Water bottle",img:"https://images.unsplash.com/photo-1606342384762-ddf691b59885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",price: 500, description: "Rolex Water bottle from switz alps",quantity: 10);
 order1 = chris.orders.create!(product_id: product1.id,quantity:2);
