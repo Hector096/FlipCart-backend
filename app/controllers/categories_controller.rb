@@ -6,6 +6,14 @@ class CategoriesController < ApplicationController
     }
   end
 
+  def show
+    @category = Category.find_by_id(params[:id])
+    render json: {
+        category: @category,
+        products: @category.products
+    }
+  end
+
   def create
     @category = Category.new(categories_params)
     if @category.save
