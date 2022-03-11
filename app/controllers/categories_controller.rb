@@ -9,8 +9,8 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find_by_id(params[:id])
     render json: {
-        category: @category,
-        products: @category.products
+      category: @category,
+      products: @category.products
     }
   end
 
