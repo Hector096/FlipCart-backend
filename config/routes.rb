@@ -11,5 +11,5 @@ Rails.application.routes.draw do
                  registrations: 'registrations'
                }
 
-  resources :products
+  resources :products, :orders
 end

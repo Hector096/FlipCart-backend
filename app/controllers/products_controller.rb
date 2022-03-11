@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     render json: {
+      length: @products.size,
       products: @products
     }
   end
