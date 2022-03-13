@@ -11,7 +11,12 @@ Rails.application.routes.draw do
                  registrations: 'registrations'
                }
 
-  resources :products
+  resources :products do
+    resources :orders, only: [:create]
+  end
   resources :categories
-  resources :orders
+  resources :users do
+    resources :orders, only: %i[index show destroy]
+  end
+  get "/current_user", to: "users#user_logged_in"
 end

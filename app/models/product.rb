@@ -3,5 +3,6 @@ class Product < ApplicationRecord
   validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   validates :quantity, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
-  has_and_belongs_to_many :orders, dependent: :destroy
+  has_many :orders
+  has_many :users, through: :orders
 end
