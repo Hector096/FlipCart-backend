@@ -25,7 +25,7 @@ class OrdersController < ApplicationController
     else
       render json: {
         status: 500,
-        errors: @order.errors.full_messages,
+        errors: @order.errors.full_messages
       }
     end
   end
@@ -36,6 +36,11 @@ class OrdersController < ApplicationController
       render json: {
         status: :deleted,
         deleted_order: @order
+      }
+    else
+      render json: {
+        status: 500,
+        errors: @order.errors.full_messages
       }
     end
   end
