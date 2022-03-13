@@ -14,7 +14,7 @@ category1 = Category.create!(name: 'Hair Care')
 category2 = Category.create!(name: 'Technology')
 category3 = Category.create!(name: 'Electronics')
 
-Product3 = category3.products.create!(
+product3 = category3.products.create!(
     name: 'Smart Speaker',
     description: 'Device used to answer calls, control other smart devices and many more',
     img: 'https://www.gannett-cdn.com/presto/2021/08/17/USAT/b80ab0cf-1674-460c-9ba7-ee5680d8a332-image1.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp',
@@ -22,9 +22,13 @@ Product3 = category3.products.create!(
     quantity: 1
 )
 
-
-
-
+product3 = category2.products.create!(
+    name: 'Smart Speaker',
+    description: 'Device used to answer calls, control other smart devices and many more',
+    img: 'https://www.gannett-cdn.com/presto/2021/08/17/USAT/b80ab0cf-1674-460c-9ba7-ee5680d8a332-image1.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp',
+    price: 99,
+    quantity: 1
+)
 
 
 
