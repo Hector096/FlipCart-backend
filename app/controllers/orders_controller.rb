@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
 
     def index
-        @orders = Order.find_by_id(current_user.id)
+        @orders = current_user.orders
         render json: {
           length: @orders.size,
           orders: @orders
