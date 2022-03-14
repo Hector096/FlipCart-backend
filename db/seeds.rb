@@ -13,12 +13,56 @@ user2 = User.create!(name: 'emma', email: 'emma@dev.com', password: 'emma22')
 category1 = Category.create!(name: 'Hair Care')
 category2 = Category.create!(name: 'Technology')
 category3 = Category.create!(name: 'Electronics')
+category4 = Category.create!(name: 'Dresses')
+category5 = Category.create!(name: 'Shoes')
+
 
 Product3 = category3.products.create!(
     name: 'Smart Speaker',
     description: 'Device used to answer calls, control other smart devices and many more',
     img: 'https://www.gannett-cdn.com/presto/2021/08/17/USAT/b80ab0cf-1674-460c-9ba7-ee5680d8a332-image1.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp',
     price: 99,
+    quantity: 1
+)
+
+Product4 = category4.products.create!(
+    name: 'Hiking Pants',
+    description: ' Designed for hiking and other outdoor activities, these shorts will take you everywhere you need to go.
+    This pant features slit pockets, made with comfortable fabric',
+    img: 'https://m.media-amazon.com/images/I/71aOwJ1mqCS._AC_UL320_.jpg',
+    price: 12,
+    quantity: 3
+)
+
+Product5 = category4.products.create!(
+    name: 'High Rise Tapered Jean',
+    description: 'Classic high rise taper jean sits at natural waist with functional pockets, easy zipper fly and belt loops for the fit you love',
+    img: 'https://m.media-amazon.com/images/I/51fLTno0lJL._AC_UL320_.jpg',
+    price: 19,
+    quantity: 2
+)
+
+Product6 = category4.products.create!(
+    name: 'Long Sleeve Solar Guard Shirt',
+    description: 'High gauge, high stretch, base layer',
+    img: 'https://m.media-amazon.com/images/I/911MK3xu2TL._AC_UL320_.jpg',
+    price: 36,
+    quantity: 1
+)
+
+Product7 = category5.products.create!(
+    name: 'Zodiac women logans',
+    description: 'Rubber sole and extra cushioning',
+    img: 'https://m.media-amazon.com/images/I/71godJxQ2ZL._AC_UL320_.jpg',
+    price: 99,
+    quantity: 2
+)
+
+Product8 = category5.products.create!(
+    name: 'Lacoste Sneakers',
+    description: 'Green embroidered crocodile on the quarter',
+    img: 'https://m.media-amazon.com/images/I/71appN3Kf7L._AC_UL320_.jpg',
+    price: 49,
     quantity: 1
 )
 
