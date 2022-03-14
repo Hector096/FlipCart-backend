@@ -10,10 +10,14 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def register_success
-    render json: { message: 'Signed up sucessfully.' }
+    render json: { message: 'Signed up sucessfully.',user: @user }
   end
 
   def register_failed
-    render json: { message: 'Something went wrong.' }
+    render json: { message: "Something went wrong. #{resource.errors.full_messages.to_sentence}" }
+  end
+
+  def sign_up_params
+    params.require(:user).permit(:name, :address, :email, :password, :password_confirmation)
   end
 end

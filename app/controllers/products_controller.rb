@@ -1,9 +1,18 @@
 class ProductsController < ApplicationController
+  load_and_authorize_resource
   def index
     @products = Product.all
     render json: {
       length: @products.size,
       products: @products
+    }
+  end
+
+  def show
+    @product = Product.find_by_id(params[:id])
+    render json: {
+      product: @product,
+      orders: @product.orders
     }
   end
 
