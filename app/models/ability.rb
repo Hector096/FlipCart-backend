@@ -5,6 +5,7 @@ class Ability
     user ||= User.new()
 
     can :read, Product, public: true
+    can :read, Category, public: true
 
     return unless user.present?
     can :manage, Order, user: user
