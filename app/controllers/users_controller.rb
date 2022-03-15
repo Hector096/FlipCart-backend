@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   def user_logged_in
     @user = current_user
     render json: {
