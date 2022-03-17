@@ -10,7 +10,7 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def register_success
-    render json: { message: 'Signed up sucessfully.' }
+    render json: { message: 'Signed up sucessfully,', user: @user }
   end
 
   def register_failed
@@ -18,6 +18,6 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def sign_up_params
-    params.require(:user).permit(:name, :address, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name,:admin, :address, :email, :password, :password_confirmation)
   end
 end

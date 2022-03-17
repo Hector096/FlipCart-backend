@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @orders = Order.all
     render json: {
@@ -14,9 +16,10 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @product = Product.find_by_id(params[:product_id])
-    @order = @product.orders.new(orders_params.except(:product_id))
-    @order.user_id = current_user.id
+    @order = current_user.orders.create(
+      product_id: params[:product_id],
+      quantity: params[:quantity]
+  )
     if @order.save
       render json: {
         status: :ordered,
@@ -48,6 +51,6 @@ class OrdersController < ApplicationController
   private
 
   def orders_params
-    params.permit(:quantity, :status, :product_id)
+    params.require(:quantity, :product_id).permit(self.class::PERMITTED_PARAMS)
   end
 end
