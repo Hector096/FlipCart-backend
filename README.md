@@ -8,6 +8,7 @@ Full API dicumentation [here](https://web.postman.co/collections/10754228-0f7286
 
 - Ruby on Rails
 - Rubocop
+- VsCode
 
 ## Getting Started
 
