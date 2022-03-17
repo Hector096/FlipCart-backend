@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
-  
+
   def index
     @orders = Order.all
     render json: {
@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
     @order = current_user.orders.create(
       product_id: params[:product_id],
       quantity: params[:quantity]
-  )
+    )
     if @order.save
       render json: {
         status: :ordered,

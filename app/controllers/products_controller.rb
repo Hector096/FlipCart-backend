@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
       orders: @product.orders
     }
   end
-  
+
   def create
     @category = Category.find_by_id(product_params[:category_id])
     @product = @category.products.new(product_params.except(:category_id))
