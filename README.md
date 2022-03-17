@@ -1,59 +1,58 @@
-#  Budget App
+## FlipCart-backend
 
-The project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+> This is a website used to order products and see the list of orders.
 
+Full API dicumentation [here](https://web.postman.co/collections/10754228-0f728611-4653-ff18-3508-8f63d51dc922?workspace=ba0ed939-71a6-4beb-8aed-82bc8ecd4669)
+## Front-End Repo
 
-[##Live Demo](https://damp-ravine-72465.herokuapp.com/)
+[FlipCart](https://github.com/Hector096/FlipCart)
 
 ## Built With
 
-* Ruby on Rails
-* Rspec
-* Psql
+- Ruby on Rails
+- Rubocop
+- VsCode
 
 ## Getting Started
 
-### Prerequisites
+To get a local copy run the following steps:
 
-* Ruby (ruby --v)
-* SQLite3 (sqlite3 --v)
-* Postgrestsql (psql --version)
-* Node.js (node --v)
-* Yarn (yarn --v)
+- Clone the project using this link `https://github.com/Hector096/FlipCart-backend.git`
+- Browse into the project's directory using `cd FlipCart-backend`
+- To install all the dependencies use `bundle install`
+- To start the server, run `rails s`
 
-## To get a local copy run the following steps:
-- Copy this link [this link](https://github.com/Hector096/budget_app)
-- Open your terminal or command line
-- Run "git clone Paste [this link](https://github.com/Hector096/budget_app)"
-- Open the folder with your code editor
-- Create a branch to work on
+## Authors
 
+👤 **Vishal Verma**
 
-## Install RSpec
+- GitHub: [@Hector096](https://github.com/Hector096)
+- LinkedIn: [@hector096](https://www.linkedin.com/in/hector096/)
 
-To run the tests locally :
+👤 **Emmanuelle Kamwa**
 
-* To instal RSpec for testing please run the following command on your terminal:
+- Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+- Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+- Linkedin: [@emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
 
- ` gem install rspec`
- 
+👤 **Leandro Barreto**
 
-
-👤 **Author**
-
-:bearded_person: **Hector**
-  - GitHub: [@githubhandle](https://github.com/Hector096)
-  - Linkedin: [@linkedinhandle](https://www.linkedin.com/in/hector096/)
+- Github: [@Leandro-Barretoo](https://github.com/Leandro-Barretoo)
+- Linkedin:[@Leandro Barreto](https://www.linkedin.com/in/leandroobarreto/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Hector096/budget_app/issues).
+Feel free to check the [issues page](https://github.com/Hector096/FlipCart-backend/issues).
 
 
 ## Acknowledgements
+
+- As required by the Creative Commons License, we give appropriate credit to the author of the original design who is Murat Korkmaz.
+
+- Thanks to the Microverse team for the great curriculum.
 
 ## Show your support
 

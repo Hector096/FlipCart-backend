@@ -1,6 +1,23 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  devise_for :users,
+               path: '',
+               path_names: {
+                 sign_in: 'login',
+                 sign_out: 'logout',
+                 registration: 'signup'
+               },
+               controllers: {
+                 sessions: 'sessions',
+                 registrations: 'registrations'
+               }
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :products, :orders
+  resources :products do
+    resources :orders, only: [:create]
+  end
+  resources :categories
+  resources :users do
+    resources :orders, only: %i[index show destroy]
+  end
+  get "/current_user", to: "users#user_logged_in"
 end
