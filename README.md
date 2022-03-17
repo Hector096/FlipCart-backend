@@ -16,7 +16,7 @@ To get a local copy run the following steps:
 - To install all the dependencies use `bundle install`
 - To start the server, run `rails s`
 
-👤 **Authors**
+## Authors
 
 👤 **Vishal Verma**
 
