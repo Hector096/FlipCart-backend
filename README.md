@@ -2,7 +2,6 @@
 
 > This is a website used to order products and see the list of orders.
 
-Full API dicumentation [here](https://web.postman.co/collections/10754228-0f728611-4653-ff18-3508-8f63d51dc922?workspace=ba0ed939-71a6-4beb-8aed-82bc8ecd4669)
 ## Front-End Repo
 
 [FlipCart](https://github.com/Hector096/FlipCart)
