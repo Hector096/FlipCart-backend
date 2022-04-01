@@ -28,11 +28,6 @@ To get a local copy run the following steps:
 - GitHub: [@Hector096](https://github.com/Hector096)
 - LinkedIn: [@hector096](https://www.linkedin.com/in/hector096/)
 
-👤 **Emmanuelle Kamwa**
-
-- Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
-- Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
-- Linkedin: [@emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
 
 👤 **Leandro Barreto**
 
